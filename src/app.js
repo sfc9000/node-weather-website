@@ -68,13 +68,7 @@ app.get("/weather", (req,res)=> {
     })
     
     
-        // res.send({
-        // // address:req.query.address,
-        // // title: "This is the weather Page",
-        // // forecast: "A bit cloudy",
-        // // location: "Bengaluru, India",
-        // // name: "Adai" 
-        //     })
+  
         }
 })
 

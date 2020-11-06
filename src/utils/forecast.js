@@ -25,7 +25,9 @@ const request = require('request')
                     Temperature: shorthnd.temperature,
                     Feels_like: shorthnd.feelslike,
                     Chance_of_Rain: shorthnd.precip,
-                    weather: shorthnd.weather_descriptions[0]
+                    weatherD: shorthnd.weather_descriptions[0],
+                    humidity:shorthnd.humidity
+                    
 
 
                 })
