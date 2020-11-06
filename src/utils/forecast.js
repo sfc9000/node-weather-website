@@ -21,16 +21,22 @@ const request = require('request')
             }
             else{ 
                 const shorthnd = resp.body.current
-                callb(undefined, {
-                    Temperature: shorthnd.temperature,
+                callb(undefined,
+                    // also can be written like this or---->> 
+                    // `  Weather is ${shorthnd.weather_descriptions[0]},
+                    //                 Temperature is ${shorthnd.temperature}, 
+                    //                 feels like ${shorthnd.feelslike},
+                    //                 humidity is ${shorthnd.humidity}`
+                
+                //------>> be destructured like this too: 
+                {     Temperature: shorthnd.temperature,
                     Feels_like: shorthnd.feelslike,
                     Chance_of_Rain: shorthnd.precip,
                     weatherD: shorthnd.weather_descriptions[0],
                     humidity:shorthnd.humidity
-                    
-
-
-                })
+                 }
+                
+                )
              }
         })
 
